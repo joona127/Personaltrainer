@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-material.css';
+import { BottomNavigation } from '@material-ui/core';
 
 
 function Traininglist() {
@@ -25,7 +26,7 @@ const columns = [
 ]
 
     return (
-        <div className="ag-theme-material" style={{height: '700px', width: '100%', margin: 'auto'}}>
+        <div className="ag-theme-material" style={{height: '700px', width: '600px', margin: 'auto'}}>
         <AgGridReact
         columnDefs={columns}   
         rowData={trainings}>
