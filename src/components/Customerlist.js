@@ -74,6 +74,7 @@ const updateCustomer = (url, customer) => {
       body: JSON.stringify(customer)
   })
   .then(_ => gridRef.current.refreshCells({rowNodes: getCustomers()}))
+  .then(_ => setOpen(true))
   .catch(err => console.error(err))
 }
 
