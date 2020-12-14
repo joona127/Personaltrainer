@@ -29,7 +29,7 @@ function EditCustomer(props) {
   };
 
   const handleSave = () => {
-     props.updateCustomer(props.params.value, customer);
+     props.updateCustomer(props.params.data.links[0].href, customer);
      handleClose();
   }
 
