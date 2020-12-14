@@ -8,6 +8,7 @@ import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PersonIcon from '@material-ui/icons/Person';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import Customerlist from './Customerlist';
+import MyCalendar from './Calendar';
 
 const useStyles = makeStyles({
     root: {
@@ -38,11 +39,12 @@ return(
       >
         <Tab icon={<PersonIcon />} value="one" label="Customers" />
         <Tab icon={<DirectionsRunIcon />} value="two" label="Trainings"  />
-        <Tab icon={<DateRangeIcon />} label="Calendar" />
+        <Tab icon={<DateRangeIcon />} value="three" label="Calendar" />
       </Tabs>
     </Paper>
     {value === 'one' && <Customerlist />}
     {value === 'two' && <Traininglist />}
+    {value === 'three' && <MyCalendar />}
     </div>
 );
 }
