@@ -116,7 +116,7 @@ const columns = [
   {headerName: '', field: 'links[0].href', 
      width: 60, 
       cellRendererFramework: params => 
-     <EditCustomer updateCustomer={updateCustomer} params={params}></EditCustomer>
+     <EditCustomer updateCustomer={updateCustomer} params={params} />
     },
     {
         headerName: '', 

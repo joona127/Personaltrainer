@@ -23,7 +23,7 @@ function EditCustomer(props) {
           postcode: props.params.data.postcode,
           city: props.params.data.city,
           email: props.params.data.email,
-          phone: props.params.data.phone
+          phone: props.params.data.phone,
       })
     setOpen(true);
   };
